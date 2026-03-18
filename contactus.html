@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">CineSatvik</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="genres.html">Genres</a>
+            <a href="contactus.html">Contact</a>
+            <button id="theme-btn" onclick="toggleTheme()"
+                style="margin-left:20px; cursor:pointer; padding:5px 10px; border-radius:10px; background:var(--main-color); color:white; border:none;">🌙
+                Mode</button>
+        </nav>
+    </header>
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm" onsubmit="return validateForm(event)">
+        <input type="text" id="userName" placeholder="Your Name">
+        <input type="email" id="userEmail" placeholder="Email">
+        <textarea id="userMessage" placeholder="Message"></textarea>
+        <br><br>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movies</title>
+
+    <style>
+        :root {
+            --bg: #000000;
+            --text: #fff;
+            --primary: #f7020e;
+            --card: #1c1c1c;
+        }
+
+        * {
+            margin: 10;
+            padding: 10;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: black;
+        }
+
+        .logo {
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .movie-card {
+            width: 180px;
+            background: var(--card);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .movie-card h3 {
+            padding: 10px;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 60%;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+
+        @media(max-width:768px) {
+            .movie-card {
+                width: 140px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CineSatvik</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="genres.html">Genres</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <h2>Movies</h2>
+
+    <div class="movie-container">
+
+
+        <div class="movie-card">
+            <img src="kalki.jpg">
+            <h3>Kalki</h3>
+        </div>
+
+        <div class="movie-card">
+            <img src="salaar.jpg">
+            <h3>Salaar</h3>
+        </div>
+
+        <div class="movie-card">
+            <img src="sahoo.jpg">
+            <h3>Saaho</h3>
+        </div>
+        <div class="movie-card">
+            <img src="rebelsaab.jpg">
+            <h3>Raja Saab</h3>
+        </div>
+
+        <div class="movie-card">
+            <img src="avengersendgame.jpg">
+            <h3>Avengers: Endgame</h3>
+        </div>
+        <div class="movie-card">
+            <img src="infinitywar.jpg">
+            <h3>Infinity War</h3>
+        </div>
+        <div class="movie-card">
+            <img src="blackpanther.jpg">
+            <h3>Black Panther</h3>
+        </div>
+        <div class="movie-card">
+            <img src="inception.jpg">
+            <h3>Inception</h3>
+        </div>
+        <div class="movie-card">
+            <img src="interstellar.jpg">
+            <h3>Interstellar</h3>
+        </div>
+        <div class="movie-card">
+            <img src="rrr.jpg">
+            <h3>RRR</h3>
+        </div>
+
+        <div class="movie-card">
+            <img src="animal.jpg">
+            <h3>Animal</h3>
+        </div>
+        <div class="movie-card">
+            <img src="avatar.jpg">
+            <h3>Avatar</h3>
+        </div>
+        <div class="movie-card">
+            <img src="barfi.jpg">
+            <h3>Barfi</h3>
+        </div>
+        <div class="movie-card">
+            <img src="bigil.jpg">
+            <h3>Bigil</h3>
+        </div>
+        <div class="movie-card">
+            <img src="dude.jpg">
+            <h3>Dude</h3>
+        </div>
+        <div class="movie-card">
+            <img src="jailer.webp">
+            <h3>Jailer</h3>
+        </div>
+        <div class="movie-card">
+            <img src="maari.jpg">
+            <h3>Maari</h3>
+        </div>
+        <div class="movie-card">
+            <img src="maharaja.jpg">
+            <h3>Maharaja</h3>
+        </div>
+        <div class="movie-card">
+            <img src="naperu.jpg">
+            <h3>Na Peru Surya</h3>
+        </div>
+        <div class="movie-card">
+            <img src="pokiri.jpg">
+            <h3>Pokiri</h3>
+        </div>
+        <div class="movie-card">
+            <img src="ramayanam.jpg">
+            <h3>Ramayanam</h3>
+        </div>
+        <div class="movie-card">
+            <img src="robo.jpg">
+            <h3>Robo</h3>
+        </div>
+        <div class="movie-card">
+            <img src="sarpata.jpg">
+            <h3>Sarpatta</h3>
+        </div>
+        <div class="movie-card">
+            <img src="sultan.jpg">
+            <h3>Sultan</h3>
+        </div>
+        <div class="movie-card">
+            <img src="tujhoothi.jpg">
+            <h3>Tu Jhoothi Main Makkaar</h3>
+        </div>
+        <div class="movie-card">
+            <img src="chandramukhi.jpg">
+            <h3>Chandramukhi</h3>
+        </div>
+        <div class="movie-card">
+            <img src="kanchana.jpg">
+            <h3>Kanchana</h3>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>Kalki</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>Salaar</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td>Saaho</td>
+            <td>5.0</td>
+        </tr>
+        <tr>
+            <td>Raja Saab</td>
+            <td>7.0</td>
+        </tr>
+
+        <tr>
+            <td>Avengers: Endgame</td>
+            <td>8.4</td>
+        </tr>
+        <tr>
+            <td>Infinity War</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>Black Panther</td>
+            <td>7.3</td>
+        </tr>
+        <tr>
+            <td>Inception</td>
+            <td>8.8</td>
+        </tr>
+        <tr>
+            <td>Interstellar</td>
+            <td>8.6</td>
+        </tr>
+        <tr>
+            <td>RRR</td>
+            <td>7.9</td>
+        </tr>
+
+        <tr>
+            <td>Animal</td>
+            <td>7.2</td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td>Barfi</td>
+            <td>8.1</td>
+        </tr>
+        <tr>
+            <td>Bigil</td>
+            <td>6.8</td>
+        </tr>
+        <tr>
+            <td>Dude</td>
+            <td>6.5</td>
+        </tr>
+        <tr>
+            <td>Jailer</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Maari</td>
+            <td>7.1</td>
+        </tr>
+        <tr>
+            <td>Maharaja</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>Na Peru Surya</td>
+            <td>6.7</td>
+        </tr>
+        <tr>
+            <td>Pokiri</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Ramayanam</td>
+            <td>7.3</td>
+        </tr>
+        <tr>
+            <td>Robo</td>
+            <td>7.1</td>
+        </tr>
+        <tr>
+            <td>Sarpatta</td>
+            <td>8.3</td>
+        </tr>
+        <tr>
+            <td>Sultan</td>
+            <td>7.0</td>
+        </tr>
+        <tr>
+            <td>Tu Jhoothi Main Makkaar</td>
+            <td>6.9</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

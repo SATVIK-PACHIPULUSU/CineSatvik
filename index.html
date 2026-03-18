@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSatvik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">CineSatvik</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="genres.html">Genres</a>
+            <a href="contactus.html">Contact</a>
+            <button id="theme-btn" onclick="toggleTheme()"
+                style="margin-left:20px; cursor:pointer; padding:5px 10px; border-radius:10px; background:var(--main-color); color:white; border:none;">🌙
+                Mode</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to CineSatvik</h1>
+        <p>Your Movie Universe</p>
+        <a href="movies.html" class="btn">Explore Movies</a>
+    </section>
+
+    <div style="text-align: center; padding: 20px;">
+        <input type="text" id="movieSearch" onkeyup="searchMovies()" placeholder="Quick Search..."
+            style="width: 50%; padding: 10px; border-radius: 10px; border: 1px solid #444; background: #222; color: white;">
+    </div>
+
+    <section class="video-section">
+        <h2>Featured Edit</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Movies in India</h2>
+        <div class="movie-container">
+            <div class="movie-card">
+                <img src="kalki.jpg">
+                <h3>Kalki</h3>
+            </div>
+            <div class="movie-card">
+                <img src="salaar.jpg">
+                <h3>Salaar</h3>
+            </div>
+            <div class="movie-card">
+                <img src="rrr.jpg">
+                <h3>RRR</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
